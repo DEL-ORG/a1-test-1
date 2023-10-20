@@ -1,2 +1,2 @@
 From ubuntu
-a1franklin
+RUN apt update
