@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        sudo docker run -itd -p 80:80 test:latest
+                        sudo docker run -itd -p 81:80 test:latest
                         sudo docker ps 
                         sudo docker ps -a
                     """
