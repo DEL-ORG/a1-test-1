@@ -13,23 +13,11 @@ pipeline {
                 }
             }
         }
-        // stage('Stop Remove Containers') {
-        //     steps {
-        //         script {
-        //             sh """
-        //             sudo docker stop \$(docker ps -q) || true
-        //             sudo docker rm \$(docker ps -aq) || true
-        //             """
-        //         }
-        //     }
-        // }
-
         stage('Docker Deploy') {
             steps {
                 script {
                     sh """
-                        
-                        sudo docker run -itd -p 80:80 test:latest
+                        sudo docker run -itd -p 8060:80 test:latest
                         sudo docker ps 
                         sudo docker ps -a
                     """
