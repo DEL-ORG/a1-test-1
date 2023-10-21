@@ -13,16 +13,16 @@ pipeline {
                 }
             }
         }
-        stage('Stop Remove Containers') {
-            steps {
-                script {
-                    sh """
-                    sudo docker stop \$(docker ps -q) || true
-                    sudo docker rm \$(docker ps -aq) || true
-                    """
-                }
-            }
-        }
+        // stage('Stop Remove Containers') {
+        //     steps {
+        //         script {
+        //             sh """
+        //             sudo docker stop \$(docker ps -q) || true
+        //             sudo docker rm \$(docker ps -aq) || true
+        //             """
+        //         }
+        //     }
+        // }
 
         stage('Docker Deploy') {
             steps {
