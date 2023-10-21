@@ -17,8 +17,8 @@ pipeline {
             steps {
                 script {
                     sh """
-                    sudo docker stop \$(docker ps -q)
-                    sudo docker rm \$(docker ps -aq)
+                    sudo docker stop \$(docker ps -q) || true
+                    sudo docker rm \$(docker ps -aq) || true
                     """
                 }
             }
