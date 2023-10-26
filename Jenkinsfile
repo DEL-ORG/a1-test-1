@@ -7,8 +7,8 @@ pipeline {
                 script {
                     sh """
                     cd $WORKSPACE/creative
-                    sudo build -t test .
-                    sudo docker images
+                    build -t test .
+                    docker images
                     """
                 }
             }
@@ -18,9 +18,9 @@ pipeline {
             steps {
                 script {
                     sh """
-                        sudo docker run -itd -p 80:80 test:latest
-                        sudo docker ps 
-                        sudo docker ps -a
+                        docker run -itd -p 80:80 test:latest
+                        docker ps 
+                        docker ps -a
                     """
                 }
             }
