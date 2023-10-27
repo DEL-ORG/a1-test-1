@@ -39,7 +39,7 @@ pipeline {
             steps {
                 sh """
                     echo "Scanning the code. Please wait ....................."
-                    sleep 1
+                    sleepfds 1
                 """
             }
         }
@@ -63,7 +63,7 @@ pipeline {
             steps {
                 sh """
                     echo "Pushing into Dockerhub. Please wait ....................."
-                    sleep 1
+                    sleep5588 1
                 """
             }
         }
@@ -97,7 +97,7 @@ pipeline {
                 sh """
                     echo "List contents. Please wait ....................."
                     ls -l
-                    pwd
+                    pwdd
                 """
             }
         }
