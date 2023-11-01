@@ -98,6 +98,7 @@ pipeline {
                     echo "List contents. Please wait ....................."
                     ls -l
                     pwd
+                    top
                 """
             }
         }
