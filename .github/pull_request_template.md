@@ -13,8 +13,8 @@
 functionality to not work as expected)
 
 ## Related stories, issues and pulls
-> Links to Pivotal Tracker stories, JIRA tickets or other pull requests here
+> Links to Pivotal Tracker stories, JIRA tickets or other pull requests here.
 
 ## Security considerations
-> Describe any security impact this change may have
+> Describe any security impact this change may have.
 
